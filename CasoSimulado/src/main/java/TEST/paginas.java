@@ -1,12 +1,8 @@
 package TEST;
 
-
-import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
 
 /**
  *
@@ -24,22 +20,38 @@ public class paginas {
         driver.manage().window().maximize();
 
         try {
-            {
-                WebElement element = driver.findElement(By.linkText("Next"));
-                Actions builder = new Actions(driver);
-                builder.moveToElement(element).perform();
-            }
-            {
-                WebElement element = driver.findElement(By.tagName("body"));
-                Actions builder = new Actions(driver);
-                builder.moveToElement(element, 0, 0).perform();
-            }
-            driver.findElement(By.id("next2")).click();
-            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-            driver.findElement(By.id("prev2")).click();
-            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-            driver.findElement(By.id("prev2")).click();
-            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+
+            driver.findElement(By.id("cartur")).click();
+            Thread.sleep(2000);
+            driver.findElement(By.cssSelector(".btn-success")).click();
+            Thread.sleep(2000);
+            driver.findElement(By.id("name")).click();
+            Thread.sleep(2000);
+            driver.findElement(By.id("name")).sendKeys("Sebastian");
+            Thread.sleep(2000);
+            driver.findElement(By.id("country")).click();
+            Thread.sleep(2000);
+            driver.findElement(By.id("country")).sendKeys("Costa Rica");
+            Thread.sleep(2000);
+            driver.findElement(By.id("city")).click();
+            Thread.sleep(2000);
+            driver.findElement(By.id("city")).sendKeys("Cartago");
+            Thread.sleep(2000);
+            driver.findElement(By.id("card")).click();
+            Thread.sleep(2000);
+            driver.findElement(By.id("card")).sendKeys("55555555");
+            Thread.sleep(2000);
+            driver.findElement(By.id("month")).click();
+            Thread.sleep(2000);
+            driver.findElement(By.id("month")).sendKeys("03");
+            Thread.sleep(2000);
+            driver.findElement(By.id("year")).click();
+            Thread.sleep(2000);
+            driver.findElement(By.id("year")).sendKeys("2023");
+            Thread.sleep(2000);
+            driver.findElement(By.cssSelector("#orderModal .btn-primary")).click();
+            Thread.sleep(2000);
+            driver.findElement(By.cssSelector(".confirm")).click();
 
             driver.close();
 

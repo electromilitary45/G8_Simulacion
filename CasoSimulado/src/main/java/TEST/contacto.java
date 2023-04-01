@@ -30,12 +30,19 @@ public class contacto {
                 builder.moveToElement(element, 0, 0).perform();
             }
             driver.findElement(By.id("recipient-email")).click();
+            Thread.sleep(2000);
             driver.findElement(By.id("recipient-email")).sendKeys("avjimenz@gmail.com");
+            Thread.sleep(2000);
             driver.findElement(By.id("recipient-name")).click();
+            Thread.sleep(2000);
             driver.findElement(By.id("recipient-name")).sendKeys("Avril");
+            Thread.sleep(2000);
             driver.findElement(By.id("message-text")).click();
+            Thread.sleep(2000);
             driver.findElement(By.id("message-text")).sendKeys("Buenas tardes.");
+            Thread.sleep(2000);
             driver.findElement(By.cssSelector("#exampleModal .btn-primary")).click();
+            Thread.sleep(2000);
             driver.close();
             System.out.println("Contacto");
         } catch (Exception e) {
