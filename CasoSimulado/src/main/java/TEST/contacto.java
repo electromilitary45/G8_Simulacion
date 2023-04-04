@@ -17,7 +17,7 @@ public class contacto {
         driver.get("https://www.demoblaze.com/cart.html");
         driver.manage().window().maximize();
 
-        try {           
+        try {
             driver.findElement(By.linkText("Contact")).click();
             {
                 WebElement element = driver.findElement(By.linkText("Contact"));
@@ -48,7 +48,6 @@ public class contacto {
         } catch (Exception e) {
             System.out.println(e);
         }
-
         driver.quit();
     }
 }

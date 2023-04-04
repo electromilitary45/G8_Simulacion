@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
  *
  * @author sebas
  */
-public class paginas {
+public class compra {
 
     public static void main(String[] args) {
         System.setProperty("webdriver.http.factory", "jdk-http-client");

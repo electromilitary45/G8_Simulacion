@@ -17,14 +17,23 @@ public class about {
 
         try {
             driver.findElement(By.linkText("About us")).click();
+            Thread.sleep(2000);
             driver.findElement(By.cssSelector(".vjs-big-play-button > .vjs-icon-placeholder")).click();
+            Thread.sleep(2000);
             driver.findElement(By.cssSelector(".vjs-play-control > .vjs-icon-placeholder")).click();
+            Thread.sleep(2000);
             driver.findElement(By.cssSelector(".vjs-play-control > .vjs-icon-placeholder")).click();
+            Thread.sleep(2000);
             driver.findElement(By.cssSelector(".vjs-mute-control > .vjs-icon-placeholder")).click();
+            Thread.sleep(2000);
             driver.findElement(By.cssSelector(".vjs-mute-control > .vjs-icon-placeholder")).click();
+            Thread.sleep(2000);
             driver.findElement(By.cssSelector(".vjs-fullscreen-control > .vjs-icon-placeholder")).click();
+            Thread.sleep(2000);
             driver.findElement(By.cssSelector(".vjs-fullscreen-control > .vjs-icon-placeholder")).click();
+            Thread.sleep(2000);
             driver.findElement(By.cssSelector("#videoModal .btn")).click();
+            Thread.sleep(2000);
             driver.close();
         } catch (Exception e) {
             System.out.println(e);
