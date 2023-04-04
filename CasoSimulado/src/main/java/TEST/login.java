@@ -30,40 +30,40 @@ public class login {
         try {
             //SELECCION DE INPUTS DE INCIO DE SESION
             WebElement loginBTN = driver.findElement(By.id("login2"));
-            Thread.sleep(2000);
+            Thread.sleep(1000);
             WebElement userInput = driver.findElement(By.id("loginusername"));
-            Thread.sleep(2000);
+            Thread.sleep(1000);
             WebElement passInput = driver.findElement(By.id("loginpassword"));
-            Thread.sleep(2000);
+            Thread.sleep(1000);
 
             //loca por clase
             WebElement loginBTN2 = driver.findElement(By.className("btn-primary"));
-            Thread.sleep(2000);
+            Thread.sleep(1000);
 
             //loca por name
             //WebElement loginBTN2 = driver.findElement(By.name("btn-primary"));
             WebElement l = driver.findElement(By.xpath("//*[@id=\"login2\"]"));
-            Thread.sleep(2000);
+            Thread.sleep(1000);
             WebElement log = driver.findElement(By.xpath("/html/body/div[3]/div/div/div[3]/button[2]"));
-            Thread.sleep(2000);
+            Thread.sleep(1000);
             //loca css
             //WebElement l2 = driver.findElement(By.cssSelector("a.nav-link"));
 
             //--LOGIN--
             l.click();
 
-            Thread.sleep(2000);
+            Thread.sleep(1000);
 
 
 
             wait.until(ExpectedConditions.visibilityOf(userInput));
-            Thread.sleep(2000);
+            Thread.sleep(1000);
             userInput.sendKeys(user);
-            Thread.sleep(2000);
+            Thread.sleep(1000);
             passInput.sendKeys(pass);
-            Thread.sleep(2000);
+            Thread.sleep(1000);
             log.click();
-            Thread.sleep(2000);
+            Thread.sleep(1000);
             System.out.println("SESION INCIADA CON EXITO");
 
         }catch (Exception e){

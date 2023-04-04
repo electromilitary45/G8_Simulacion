@@ -30,34 +30,34 @@ public class register {
         try {
             //SELECCION DE INPUTS DE INCIO DE SESION
             WebElement signupBTN = driver.findElement(By.id("signin2"));
-            Thread.sleep(2000);
+            Thread.sleep(1000);
             WebElement userInput = driver.findElement(By.id("sign-username"));
-            Thread.sleep(2000);
+            Thread.sleep(1000);
             WebElement passInput = driver.findElement(By.id("sign-password"));
-            Thread.sleep(2000);
+            Thread.sleep(1000);
 
             //loca por clase
             WebElement loginBTN2 = driver.findElement(By.className("btn-primary"));
-            Thread.sleep(2000);
+            Thread.sleep(1000);
             //loca por name
             //WebElement loginBTN2 = driver.findElement(By.name("btn-primary"));
 
             WebElement sigup = driver.findElement(By.xpath("/html/body/div[2]/div/div/div[3]/button[2]"));
-            Thread.sleep(2000);
+            Thread.sleep(1000);
             //loca css
             //WebElement l2 = driver.findElement(By.cssSelector("a.nav-link"));
 
             //--LOGIN--
             signupBTN.click();
-            Thread.sleep(2000);
+            Thread.sleep(1000);
             wait.until(ExpectedConditions.visibilityOf(userInput));
-            Thread.sleep(2000);
+            Thread.sleep(1000);
             userInput.sendKeys(user);
-            Thread.sleep(2000);
+            Thread.sleep(1000);
             passInput.sendKeys(pass);
-            Thread.sleep(2000);
+            Thread.sleep(1000);
             sigup.click();
-            Thread.sleep(2000);
+            Thread.sleep(1000);
             System.out.println("REGISTRO EXITO");
 
         }catch (Exception e){
