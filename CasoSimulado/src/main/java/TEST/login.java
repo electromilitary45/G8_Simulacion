@@ -30,11 +30,8 @@ public class login {
         try {
             //SELECCION DE INPUTS DE INCIO DE SESION
             WebElement loginBTN = driver.findElement(By.id("login2"));
-            Thread.sleep(1000);
             WebElement userInput = driver.findElement(By.id("loginusername"));
-            Thread.sleep(1000);
             WebElement passInput = driver.findElement(By.id("loginpassword"));
-            Thread.sleep(1000);
 
             //loca por clase
             WebElement loginBTN2 = driver.findElement(By.className("btn-primary"));
@@ -57,9 +54,7 @@ public class login {
 
 
             wait.until(ExpectedConditions.visibilityOf(userInput));
-            Thread.sleep(1000);
             userInput.sendKeys(user);
-            Thread.sleep(1000);
             passInput.sendKeys(pass);
             Thread.sleep(1000);
             log.click();

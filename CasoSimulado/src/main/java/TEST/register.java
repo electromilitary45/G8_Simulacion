@@ -23,18 +23,16 @@ public class register {
         driver.manage().window().maximize();
 
         //varibles de sesion
-        String user="electro2";
+        String user="electro3";
         String pass="electro";
 
 
         try {
             //SELECCION DE INPUTS DE INCIO DE SESION
             WebElement signupBTN = driver.findElement(By.id("signin2"));
-            Thread.sleep(1000);
             WebElement userInput = driver.findElement(By.id("sign-username"));
-            Thread.sleep(1000);
             WebElement passInput = driver.findElement(By.id("sign-password"));
-            Thread.sleep(1000);
+
 
             //loca por clase
             WebElement loginBTN2 = driver.findElement(By.className("btn-primary"));
